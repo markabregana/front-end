@@ -1,0 +1,49 @@
+/* header */
+header{
+    position: relative;
+    z-index: 99;
+    @include box-shadow(0 0 5px 5px rgba(0,0,0,0.1));
+}
+.main-logo{
+    padding: 20px 0 17px;
+    float: left;
+
+    @include respond-to-width($mid-tab-size){
+        float: none;
+        text-align: center;
+    }
+}
+.slogan{
+    float: left;
+    padding: 43px 0 0 12px;
+    color: $second-theme-color;
+    font-family: $font-bold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @include respond-to-width($mid-tab-size){
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+}
+.right-header{
+    float: right;
+    padding: 13px 0 0 ;
+    ul{
+        list-style: none;
+        margin: 0;
+        color: #000;
+        li{
+            background: url('../images/bullet.jpg') no-repeat 0 1px transparent;
+            padding: 0 0 0 15px;
+            font-family: $font-bold;
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0 0 5px;
+        }
+    }
+
+}

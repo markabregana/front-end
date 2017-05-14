@@ -1,0 +1,56 @@
+main{
+    color: $theme-color;
+    padding: 35px 0 10px;
+    a{
+        color: $theme-color;
+    }
+
+    &#home{
+        background: url('../images/bg-banner.png') no-repeat center bottom $second-theme-color;
+        background-size: cover;
+    }
+}
+.main-titles{
+
+    h2{
+        font-family: $font-normal;
+        font-weight: normal;
+        font-size: 42px;
+        line-height: 46px;
+        margin: 0;
+    }
+    h3{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: normal;
+    }
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to-width($tab-size){
+        display: block;
+    }
+
+    .left-content{
+        width: 490px;
+        @include respond-to-width($big-tab-size){
+            flex: 5;
+            margin-right: 2%;
+        }
+        @include respond-to-width($tab-size){
+            width: 100%;
+            margin: 0 0 40px;
+        }
+    }
+    .right-content{
+        width: 400px;
+        @include respond-to-width($big-tab-size){
+            flex: 4;
+        }
+        @include respond-to-width($tab-size){
+            width: 100%;
+        }
+    }
+}

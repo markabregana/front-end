@@ -1,0 +1,49 @@
+/* CSS Document */
+/* reset */
+*{margin:0; padding:0}
+img{max-width:100%; vertical-align: top;}
+input, textarea{ outline:none; }
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+/* Paragraphs */
+* p:last-child {margin-bottom: 0;}
+
+/* Lists */
+ul {list-style: outside disc;}
+ol {list-style: outside decimal;}
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+/* Quotes */
+blockquote {font-style: italic;}
+cite {}
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+	/* Thead */
+	thead th {padding: .5em .4em; text-align: left;}
+	thead td {}
+
+	/* Tbody */
+	tbody td {padding: .5em .4em;}
+	tbody th {}
+
+	tbody .alt td {}
+	tbody .alt th {}
+
+	/* Tfoot */
+	tfoot th {}
+	tfoot td {}
+
+/* classes */
+.clear{	clear:both;	height:0; }
+.alignCenter{text-align:center;}
+.alignRight{ text-align:right; }
+.nomargin{margin:0 !important;}
+.nopaddingleft{padding-left:0 !important}
+.noBorder{border:0 !important;}

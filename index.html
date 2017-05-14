@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Legal Match</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-style-type" content="text/css" />
+	<meta http-equiv="content-language" content="en-gb" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css" />
+
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <figure class="main-logo"><a href="/"><img src="images/main-logo.jpg" alt="Legal Match" /></a></figure>
+        <div class="slogan">Find The Right Lawyer Now</div>
+        <div class="right-header">
+            <ul>
+                <li>No Fee to present your case</li>
+                <li>Choose from lawyers in your area</li>
+                <li>A 100% confidential service</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</header>
+
+<main id="home">
+    <div class="wrap">
+        <div class="main-titles">
+            <h2>Find a Lawyer for your Legal Issue</h2>
+            <h3>Fast, Free and Confidential</h3>
+        </div>
+        <div class="main-content">
+            <div class="left-content">
+                <form class="form-wrap">
+                    <div class="form-row">
+                        <div class="field-label">Enter Zip Code or City:</div>
+                        <div class="field-input-wrap">
+                            <div class="field-number">1</div>
+                            <div class="field-input"><input type="text" name="" placeholder="Does not have to be where you live" /></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field-label">Choose a category:</div>
+                        <div class="field-container">
+                            <div class="field-input-wrap">
+                                <div class="field-number">2</div>
+                                <div class="field-input select-dropdown">Click to choose a legal category</div>
+                                <div class="field-arrow"><img src="images/arrow-down.png" /></div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div id="category-dropdown" class="hide">
+                                <ul>
+                                    <li><a href="">Family</a></li>
+                                    <li><a href="">Criminal Defense</a></li>
+                                    <li><a href="">Business</a></li>
+                                    <li><a href="">Personal Injury</a></li>
+                                    <li><a href="">Bankruptcy & Finances</a></li>
+                                    <li><a href="">Products & Services</a></li>
+                                    <li><a href="">Employment</a></li>
+                                    <li><a href="">Real Estate</a></li>
+                                    <li><a href="">Immigration</a></li>
+                                    <li><a href="">Wills, Trusts & Estates</a></li>
+                                    <li><a href="">Government</a></li>
+                                    <li><a href="">Intellectual Property</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row form-submit">Can’t find your category? <a href="#">Click here</a>.</div>
+                </form>
+            </div>
+            <div class="right-content">
+                <div class="client-review">
+                    <h2 class="block-title">Clients review LegalMatch lawyers</h2>
+                    <div class="review-entries">
+                        <div id="person-1" class="review-entry">
+
+                            <div class="review-person">
+                                <figure><img src="images/person-1.png" /></figure>
+                                <div class="person-details">
+                                    <h2 class="person-name">Mitchell M.</h2>
+                                    <h3 class="person-address">Cherry Hill, NJ</h3>
+                                </div>
+                            </div>
+
+                            <div class="review-content">
+                                <div class="review-field-wrap">
+                                    <div class="review-field">Family Law</div>
+                                    <div class="review-rating">
+                                        <ul>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="review-text"><em>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</em></div>
+                                <div class="read-review"><a href="#person-1">Read Review</a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div><!--review-entry-->
+
+                        <div id="person-2" class="review-entry">
+
+                            <div class="review-person">
+                                <figure><img src="images/person-2.png" /></figure>
+                                <div class="person-details">
+                                    <h2 class="person-name">Joel C.</h2>
+                                    <h3 class="person-address">Little Rock, AK</h3>
+                                </div>
+                            </div>
+
+                            <div class="review-content">
+
+                                <div class="review-field-wrap">
+                                    <div class="review-field">Job & Employment Law</div>
+                                    <div class="review-rating">
+                                        <ul>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="review-text"><em>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</em></div>
+                                <div class="read-review"><a href="#person-2">Read Review</a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div><!--review-entry-->
+
+                        <div id="person-3" class="review-entry">
+
+                            <div class="review-person">
+                                <figure><img src="images/person-3.png" /></figure>
+                                <div class="person-details">
+                                    <h2 class="person-name">Brigida R.</h2>
+                                    <h3 class="person-address">Dallas, TX</h3>
+                                </div>
+                            </div>
+
+                            <div class="review-content">
+
+                                <div class="review-field-wrap">
+                                    <div class="review-field">Family Law</div>
+                                    <div class="review-rating">
+                                        <ul>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                            <li><img src="images/star-rating.png" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="review-text"><em>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</em></div>
+                                <div class="read-review"><a href="#person-3">Read Review</a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div><!--review-entry-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <figure class="footer-main-logo"><a href=""><img src="images/small-main-logo.jpg" alt="Legal Match" /></a></figure>
+        <div class="footer-content">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">User Agreement</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch®</p>
+                <p>the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patent Pending.</p>
+            </div>
+        </div>
+        <div class="footer-accredit">
+            <div class="accredit-1"><a href="" target="blank"><img src="images/small-logo-1.jpg" /></a></div>
+            <div class="accredit-2"><a href="" target="blank"><img src="images/small-logo-2.jpg" /></a></div>
+        </div>
+    </div>
+</footer>
+
+<section id="modal" class="hide">
+    <div class="overlay"></div>
+    <div class="modal-wrapper">
+        <div class="modal-close"><img src="images/modal-close.jpg" alt="X" /></div>
+
+        <div id="sub-category" class="hide">
+            <div class="modal-category-header">
+                <div class="field-number">3</div>
+                <div class="category-title">Which <strong></strong> issue(s) apply to your case?</div>
+            </div>
+            <div class="sub-category-list">
+                <ul>
+                    <li><span class="square"></span><label for="">Adoptions</label></li>
+                    <li><span class="square"></span><label for="">Guardianship</label></li>
+                    <li><span class="square"></span><label for="">Child Custody and Visitaion</label></li>
+                    <li><span class="square"></span><label for="">Paternity</label></li>
+                    <li><span class="square"></span><label for="">Child Support</label></li>
+                    <li><span class="square"></span><label for="">Separations</label></li>
+                    <li><span class="square"></span><label for="">Divorce</label></li>
+                    <li><span class="square"></span><label for="">Spousal Support or Alimony</label></li>
+                </ul>
+            </div>
+            <div class="btn-submit"><button>FIND A LAWYER NOW</button></div>
+        </div>
+
+        <div id="other-category" class="hide">
+            <div class="scroller-y">
+                <div class="modal-other-category-header">
+                    <h2>Other Categories</h2>
+                    <h3>Choose the category that best fits your case</h3>
+                </div>
+                <div class="other-category-list">
+                    <ul>
+                        <li><a href="">Abuse (Child, Domestic, Sexual)</a></li>
+                        <li><a href="">Agencies & Administration</a></li>
+                        <li><a href="">Automobile ( DUI, Crimes, Speeding )</a></li>
+                        <li><a href="">Automobiles ( Accidents, Insurance )</a></li>
+                        <li><a href="">Banking ( Business, Consumer )</a></li>
+                        <li><a href="">Bars & Restaurants</a></li>
+                        <li><a href="">Business Formation & Dissolution</a></li>
+                        <li><a href="">Children (Adoption, Custody, Support)</a></li>
+                        <li><a href="">Class Actions (Bad Drugs, Products)</a></li>
+                        <li><a href="">Commercial Law and Contracts</a></li>
+                        <li><a href="">Commercial Real Estate</a></li>
+                        <li><a href="">Constitutional Law</a></li>
+                        <li><a href="">Construction (Disputes, Liens)</a></li>
+                        <li><a href="">Categories Item Here</a></li>
+                        <li><a href="">Abuse (Child, Domestic, Sexual)</a></li>
+                        <li><a href="">Agencies & Administration</a></li>
+                        <li><a href="">Automobile ( DUI, Crimes, Speeding )</a></li>
+                        <li><a href="">Automobiles ( Accidents, Insurance )</a></li>
+                        <li><a href="">Banking ( Business, Consumer )</a></li>
+                        <li><a href="">Bars & Restaurants</a></li>
+                        <li><a href="">Business Formation & Dissolution</a></li>
+                        <li><a href="">Children (Adoption, Custody, Support)</a></li>
+                        <li><a href="">Class Actions (Bad Drugs, Products)</a></li>
+                        <li><a href="">Commercial Law and Contracts</a></li>
+                        <li><a href="">Commercial Real Estate</a></li>
+                        <li><a href="">Constitutional Law</a></li>
+                        <li><a href="">Construction (Disputes, Liens)</a></li>
+                        <li><a href="">Categories Item Here</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Loremipsum Dolorsitamet,</a></li>
+                        <li><a href="">Lonsectetur Scingelit  (Baseererkj, Mereit)</a></li>
+                        <li><a href="">Miam Euvelit</a></li>
+                        <li><a href="">Mempor Auctor (Estiarma, Toeruslej)</a></li>
+                        <li><a href="">Nisultricies Dictumest.</a></li>
+                        <li><a href="">Ntfring Sodalelit (Aeeticl Restoustoust)</a></li>
+                        <li><a href="">Ntvarius Lectus & Congue</a></li>
+                        <li><a href="">Pellentesque</a></li>
+                        <li><a href="">Rigula Aliquamattis (Nestusotu, Wewreist)</a></li>
+                        <li><a href="">Set Tigulempor</a></li>
+                        <li><a href="">Sehicula Sedsitamet</a></li>
+                        <li><a href="">Seque Nesturre</a></li>
+                        <li><a href="">Tollis Gaurissed</a></li>
+                        <li><a href="">Tempor Auctor (Estiarma, Toeruslej)</a></li>
+                        <li><a href="">Loremipsum Dolorsitamet,</a></li>
+                        <li><a href="">Lonsectetur Scingelit  (Baseererkj, Mereit)</a></li>
+                        <li><a href="">Miam Euvelit</a></li>
+                        <li><a href="">Mempor Auctor (Estiarma, Toeruslej)</a></li>
+                        <li><a href="">Nisultricies Dictumest.</a></li>
+                        <li><a href="">Ntfring Sodalelit (Aeeticl Restoustoust)</a></li>
+                        <li><a href="">Ntvarius Lectus & Congue</a></li>
+                        <li><a href="">Pellentesque</a></li>
+                        <li><a href="">Rigula Aliquamattis (Nestusotu, Wewreist)</a></li>
+                        <li><a href="">Set Tigulempor</a></li>
+                        <li><a href="">Sehicula Sedsitamet</a></li>
+                        <li><a href="">Seque Nesturre</a></li>
+                        <li><a href="">Tollis Gaurissed</a></li>
+                        <li><a href="">Tempor Auctor (Estiarma, Toeruslej)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-review" class="hide">
+            <div class="scroller-y">
+                <div class="modal-view-review-header all-caps">
+                    <h2>Client Reviews</h2>
+                </div>
+                <div class="view-review-person">
+                    <figure class="vr-person-image"><img src="" alt="" /></figure>
+                    <div class="vr-person-info">
+                        <h2></h2>
+                        <h3></h3>
+                        <h4></h4>
+                    </div>
+                </div>
+                <div class="modal-view-review-header">
+                    <h2>Rating <span>(29 users)</span></h2>
+                    <div class="vr-person-rating">
+                        <ul>
+                            <li><img src="images/big-yellow-star.png" alt=""></li>
+                            <li><img src="images/big-yellow-star.png" alt=""></li>
+                            <li><img src="images/big-yellow-star.png" alt=""></li>
+                            <li><img src="images/big-yellow-star.png" alt=""></li>
+                            <li><img src="images/big-grey-star.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vr-person-tally">
+                    <div class="tally-row">
+                        <div class="tally-title"><strong>Overall</strong></div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Responded in a timely ;manner</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-grey-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Answered questions clearly</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Understood needs</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-grey-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Gave complete and clear information</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Knowledgeable in legal area</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-grey-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Good value for money</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Would hire again</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-grey-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tally-row">
+                        <div class="tally-title">Would recommend to friend</div>
+                        <div class="tally-stars">
+                            <ul>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                <li><img src="images/mid-yellow-star.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="vr-comment-wrap">
+                    <div class="vr-comment-entry">
+                        <div class="vr-comment-title">
+                            <div class="comment-star">
+                                <ul>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="comment-owner">
+                                by <span class="co-name">Dexter Marchal</span>, <span class="co-date">06/10/2016</span>
+                            </div>
+                        </div>
+                        <div class="vr-comment-text">
+                            <p>Deb did a great job. Got my bench warrant set aside ... was sure I was going to jail ... phew. Judge seemed to respect her and I got what I </p>
+                        </div>
+                    </div>
+                    <div class="vr-comment-entry">
+                        <div class="vr-comment-title">
+                            <div class="comment-star">
+                                <ul>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="comment-owner">
+                                by <span class="co-name">Dexter Marchal</span>, <span class="co-date">06/10/2016</span>
+                            </div>
+                        </div>
+                        <div class="vr-comment-text">
+                            <p>Deb did a great job. Got my bench warrant set aside ... was sure I was going to jail ... phew. Judge seemed to respect her and I got what I </p>
+                        </div>
+                    </div>
+                    <div class="vr-comment-entry">
+                        <div class="vr-comment-title">
+                            <div class="comment-star">
+                                <ul>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="comment-owner">
+                                by <span class="co-name">Dexter Marchal</span>, <span class="co-date">06/10/2016</span>
+                            </div>
+                        </div>
+                        <div class="vr-comment-text">
+                            <p>Deb did a great job. Got my bench warrant set aside ... was sure I was going to jail ... phew. Judge seemed to respect her and I got what I </p>
+                        </div>
+                    </div>
+                    <div class="vr-comment-entry">
+                        <div class="vr-comment-title">
+                            <div class="comment-star">
+                                <ul>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="comment-owner">
+                                by <span class="co-name">Dexter Marchal</span>, <span class="co-date">06/10/2016</span>
+                            </div>
+                        </div>
+                        <div class="vr-comment-text">
+                            <p>Deb did a great job. Got my bench warrant set aside ... was sure I was going to jail ... phew. Judge seemed to respect her and I got what I </p>
+                        </div>
+                    </div>
+                    <div class="vr-comment-entry">
+                        <div class="vr-comment-title">
+                            <div class="comment-star">
+                                <ul>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                    <li><img src="images/mid-yellow-star.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="comment-owner">
+                                by <span class="co-name">Dexter Marchal</span>, <span class="co-date">06/10/2016</span>
+                            </div>
+                        </div>
+                        <div class="vr-comment-text">
+                            <p>Deb did a great job. Got my bench warrant set aside ... was sure I was going to jail ... phew. Judge seemed to respect her and I got what I </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="closeLink"><a href="">Close</a></div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

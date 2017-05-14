@@ -1,0 +1,7 @@
+[
+  {"name": "Nowheresville", "code": "XX", "zip": "00000"},
+  {"name": "Aland Islands", "code": "AX" , "zip": "11111"},
+  {"name": "Albania", "code": "AL" , "zip": "22222"},
+  {"name": "Algeria", "code": "DZ" , "zip": "33333"},
+  {"name": "American Samoa", "code": "AS" , "zip": "44444"}
+ ]

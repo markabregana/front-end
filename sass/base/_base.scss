@@ -1,0 +1,22 @@
+/* CSS Document */
+
+.wrap{
+	width: $wrapper-size;
+	margin: 0 auto;
+
+	@include respond-to-width($wrapper-size + 40){
+		width: 96%;
+		margin: 0 2%;
+	}
+}
+
+body{
+	background: $theme-color;
+	font-family: $font-normal;
+	font-size: $font-size;
+	line-height: $font-height;
+	color: $font-color;
+
+	position: relative;
+	z-index: 1;
+}

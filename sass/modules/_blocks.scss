@@ -1,0 +1,570 @@
+/* blocks */
+.block-title{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: $font-normal;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+.review-entry{
+    border-bottom: 1px solid #4a7caa;
+    padding: 0 0 10px;
+    margin: 0 0 15px;
+
+    &:last-child{
+        margin: 0;
+        border: 0;
+    }
+}
+.review-person{
+    float: left;
+    width: 85px;
+    margin: 0 12px 0 0;
+    text-align: center;
+
+    figure{
+        margin: 0 0 7px;
+    }
+}
+.person-name{
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: normal;
+    margin: 0;
+}
+.person-address{
+    color: #dadada;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: normal;
+}
+
+
+.review-field-wrap{
+    display: flex;
+    justify-content: flex-start;
+}
+.review-field{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $font-bold;
+    margin: 0 20px 0 0;
+}
+.review-rating{
+
+    ul{
+        list-style: none;
+        margin: 0;
+        li{
+            display: inline-block;
+        }
+    }
+}
+.review-text{
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.read-review{
+    margin: 10px 0 0;
+    a{
+        background: url('../images/icon-book.png') no-repeat right 3px transparent;
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        font-size: 10px;
+        line-height: 14px;
+        color: #fbd243;
+        padding: 0 18px 0 0;
+    }
+}
+
+
+
+/* forms */
+.form-wrap{
+    margin: 30px 0 0;
+}
+.form-row{
+    margin: 0 0 25px;
+
+    &.form-submit{
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+.field-label{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 10px;
+    font-family: $font-bold;
+}
+
+.field-input-wrap{
+    background: $theme-color;
+    @include border-radius(32px);
+    padding: 17px;
+
+    @include transition(box-shadow 0.3s);
+
+    &.active{
+        @include box-shadow(0 0 20px 5px rgba(142, 185, 229, 0.5));
+    }
+}
+.field-number{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $font-bold;
+    font-weight: bold;
+    text-align: center;
+
+    background: $third-theme-color;
+    @include border-radius(50%);
+
+    width: 30px;
+    padding: 5px 0;
+
+    float: left;
+}
+.field-input{
+    float: left;
+    width: 80%;
+    input[type="text"], input[type="number"], input[type="email"] {
+        border:0;
+        background: transparent;
+        color: #4e555c;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 4%;
+        width: 92%;
+    }
+
+    &.select-dropdown{
+        cursor: pointer;
+        color: #989898;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 4%;
+        width: 70%;
+    }
+}
+.field-arrow{
+    float: right;
+    padding: 10px 8px 0 0;
+    height: 12px;
+}
+
+
+.field-container{
+    position: relative;
+    z-index: 99;
+}
+#category-dropdown{
+    background: $theme-color;
+    @include border-radius(17px);
+    @include box-shadow(0 3px 10px 2px rgba(0,0,0,0.3));
+    position: absolute;
+    z-index: 99;
+
+    width: 94%;
+    padding: 20px 3%;
+
+    top: 110%;
+    left: 0;
+
+    &.hide{
+        display: none;
+    }
+    &.show{
+        display: block;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+
+        li{
+
+            a{
+                display: block;
+                color: #5a5d60;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 20px;
+
+                padding: 5px 10%;
+                width: 80%;
+
+                &:hover, &.active{
+                    background: #bcd3e3;
+                    font-family: $font-bold;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* modal */
+#modal{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &.hide{ display: none; }
+    &.show{ display: block; }
+}
+.overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal-close{
+    position: absolute;
+    z-index: 99;
+    right: 3%;
+    top: 20px;
+    cursor: pointer;
+}
+.modal-wrapper{
+    position: absolute;
+    z-index: 99;
+
+    background: $theme-color;
+    @include border-radius(17px);
+    @include box-shadow(0 3px 10px 2px rgba(0,0,0,0.3));
+
+    padding: 48px 30px;
+
+    top: 15%;
+    left: 50%;
+
+    @include respond-to-width($tab-size){
+        left: auto;
+        width: 80%;
+        padding: 10% 5%;
+        margin: 0 5% !important;
+    }
+}
+
+#sub-category{
+    width: 540px;
+
+    &.hide{display: none;}
+    &.show{display: block;}
+
+    @include respond-to-width($tab-size){
+        width: 100%;
+    }
+
+    .field-number{
+        color: $theme-color;
+    }
+    .modal-category-header{
+        margin: 0 0 30px;
+    }
+    .category-title{
+        font-size: 18px;
+        line-height: 26px;
+        color: #4e555c;
+        padding: 3px 0 0 40px;
+    }
+    .sub-category-list{
+        ul{
+            list-style: none;
+            margin: 0;
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include respond-to-width($tab-size){
+                display: block;
+            }
+
+            li{
+                width: 45%;
+                margin: 0 5% 20px 0;
+
+                font-size: 14px;
+                line-height: 20px;
+                color: #000;
+                cursor: pointer;
+
+                &:hover .square{
+                    background: $third-theme-color;
+                }
+
+                @include respond-to-width($tab-size){
+                    width: 100%;
+                    margin: 0 0 20px;
+                }
+
+                .square{
+                    display: inline-block;
+                    border: 1px solid #b3b7ba;
+                    @include border-radius(3px);
+                    height: 18px;
+                    width: 18px;
+                    margin-right: 18px;
+
+                    @include transition(background-color 0.3s);
+                }
+
+                label{
+                    display: inline-block;
+                    vertical-align: top;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+.btn-submit{
+    text-align: center;
+    margin: 30px 0 0;
+    button{
+        background: $second-theme-color;
+        font-size: 16px;
+        line-height: 22px;
+        color: $theme-color;
+        font-family: $font-bold;
+        @include border-radius(32px);
+        border: 0;
+        cursor: pointer;
+        padding: 15px 37px;
+
+        @include transition(background-color 0.3s);
+
+        &:hover{
+            background: $third-theme-color;
+        }
+    }
+}
+
+
+#other-category{
+    width: 670px;
+
+    &.hide{ display: none; }
+    &.show{ display: block; }
+
+    @include respond-to-width($tab-size){
+        width: 100%;
+    }
+}
+.modal-other-category-header{
+
+    h2, h3{
+        color: #2b2c2d;
+        margin: 0;
+        font-family: $font-normal;
+        font-weight: normal;
+    }
+    h2{
+        font-size: 21px;
+        line-height: 26px;
+    }
+    h3{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 20px;
+    }
+}
+.other-category-list{
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to-width($tab-size){
+        display: block;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0 3% 0 0;
+        flex: 1;
+
+        li{
+            margin: 0 0 10px;
+            a{
+                color: #1864af;
+                font-size: 14px;
+                line-height: 20px;
+                text-decoration: none;
+
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* view rating */
+#view-review{
+    width: 540px;
+
+    &.hide{ display: none; }
+    &.show{ display: block; }
+
+    @include respond-to-width($tab-size){
+        width: 100%;
+    }
+}
+.modal-view-review-header{
+    padding: 0 0 15px;
+    border-bottom: 1px solid #666666;
+    margin: 0 0 20px;
+
+    display: flex;
+    justify-content: flex-start;
+
+    h2{
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        font-weight: normal;
+        font-family: $font-normal;
+        margin: 0;
+
+        span{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    &.all-caps{
+        text-transform: uppercase;
+    }
+}
+.vr-person-rating{
+    padding: 5px 0 0 10px;
+    ul{
+        list-style: none;
+        margin: 0;
+
+        display: flex;
+        justify-content: flex-start;
+
+        li{
+            vertical-align: middle;
+        }
+    }
+}
+.view-review-person{
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 0 0 30px;
+}
+.vr-person-image{
+    margin: 0 20px 20px 0;
+    img{
+        @include border-radius(50%);
+    }
+}
+.vr-person-info{
+    padding: 13px 0 0;
+
+    h2, h3, h4{
+        font-weight: normal;
+        font-family: $font-normal;
+        margin: 0;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 34px;
+        color: #000000;
+    }
+    h3, h4{
+        font-size: 16px;
+        line-height: 20px;
+        color: #979da3;
+    }
+    h4{
+        color: #000;
+    }
+}
+.vr-person-tally{
+    border-bottom: 1px solid #666666;
+    padding: 0 0 18px;
+}
+.tally-row{
+    display: flex;
+    justify-content: space-between;
+
+    &:hover{
+        background: #eee;
+    }
+
+    .tally-title{
+        color:#212121;
+        font-size: 14px;
+    }
+}
+.tally-stars, .comment-star{
+    padding: 3px 0 0;
+    ul{
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        li{
+            vertical-align: middle;
+        }
+    }
+}
+
+.vr-comment-entry{
+    margin: 25px 0;
+}
+.vr-comment-title{
+    display: flex;
+    justify-content: flex-start;
+}
+.comment-star{
+    margin: 0 10px 0 0;
+}
+.comment-owner, .vr-comment-text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.comment-owner{
+    font-family: $font-bold;
+}
+.closeLink{
+    text-align: right;
+    a{
+        font-size: 14px;
+        line-height: 20px;
+        color: #0000ff;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover{ color: #000; }
+    }
+}
+.scroller-y{
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+    height: 550px;
+
+    padding: 0 20px 0 0;
+    margin:0 0 20px;
+}

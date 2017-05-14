@@ -1,0 +1,30 @@
+/* mixins */
+@mixin box-shadow($value){
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -o-box-shadow: $value;
+    -mos-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin border-radius($value){
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -o-border-radius: $value;
+    -mos-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin transition($value){
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -o-transition: $value;
+    -mos-transition: $value;
+    transition: $value;
+}
+
+@mixin respond-to-width($size){
+    @media only screen and (max-width: $size){
+        @content;
+    }
+}
